@@ -1,0 +1,396 @@
+[
+  {
+    "uri": "features/specs/login.feature",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "description": "SENDO um usuario\nEU QUERO logar no sistema com meus dados\nPARA que eu possa acessar o sistema de RH",
+    "line": 3,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Tela Principal",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31185
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13816
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na pagina Principal",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/step_definitions/login.rb:2:in `\"que estou na pagina Principal\"'\nfeatures/specs/login.feature:10:in `Dado que estou na pagina Principal'",
+              "duration": 306318
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;credenciais-invalidas",
+        "keyword": "Cenario",
+        "name": "Credenciais Invalidas",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "informo usuario \"12345\" incorreto e senha \"12345\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o sistema apresenta a mensagem \"Invalid credentials\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/support/hooks.rb:7:in `After'",
+              "duration": 528951
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)",
+              "duration": 178817
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Tela Principal",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21316
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11053
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na pagina Principal",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/step_definitions/login.rb:2:in `\"que estou na pagina Principal\"'\nfeatures/specs/login.feature:10:in `Dado que estou na pagina Principal'",
+              "duration": 254212
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;usuario-nao-informado",
+        "keyword": "Cenario",
+        "name": "Usuario nao informado",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "informo usuario \"\" incorreto e a senha \"admin\" incorreta",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/login.rb:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o sistema apresenta a mensagem \"Username cannot be empty\"",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/support/hooks.rb:7:in `After'",
+              "duration": 442108
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)",
+              "duration": 127895
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Tela Principal",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20527
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11447
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na pagina Principal",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/step_definitions/login.rb:2:in `\"que estou na pagina Principal\"'\nfeatures/specs/login.feature:10:in `Dado que estou na pagina Principal'",
+              "duration": 246318
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;senha-nao-informada",
+        "keyword": "Cenario",
+        "name": "Senha nao informada",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "informo usuario \"admin\" incorreto e senha \"\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o sistema apresenta a mensagem \"Password cannot be empty\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/support/hooks.rb:7:in `After'",
+              "duration": 474082
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)",
+              "duration": 136975
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Tela Principal",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43816
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11447
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na pagina Principal",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/step_definitions/login.rb:2:in `\"que estou na pagina Principal\"'\nfeatures/specs/login.feature:10:in `Dado que estou na pagina Principal'",
+              "duration": 258160
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-com-sucesso",
+        "keyword": "Cenario",
+        "name": "Login com sucesso",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "informo usuario \"Admin\" e senha \"admin\"",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/login.rb:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o sistema apresenta a tela de RH",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/login.rb:34"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)\n./features/support/hooks.rb:7:in `After'",
+              "duration": 487503
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "no driver called #<Selenium::WebDriver::Chrome::Driver:0x626fb1d2 browser=:chrome> was found, available drivers: :rack_test, :selenium, :selenium_chrome, :selenium_chrome_headless, :poltergeist (Capybara::DriverNotFoundError)",
+              "duration": 136185
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
